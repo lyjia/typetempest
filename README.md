@@ -1,8 +1,10 @@
 # TypeTempest
 
-Type Tempest is a type-checking gem for Ruby methods, which automates the tedious pattern of `raise ArgumentError, "Blah is ivalid" unless blah.is_a?(String)`
+Type Tempest is **an experimental** type-checking gem for Ruby methods, which automates the tedious pattern of `raise ArgumentError, "Blah is ivalid" unless blah.is_a?(String)`
 
 Say what you will about dynamic typing -- this is for those times where one does not want a million possibilities in their inputs.
+
+**Note about experimental nature:** This gem eval()s code blocks that it is given. This is dangerous! Don't use this on anything in production!
 
 ## Installation
 
