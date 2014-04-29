@@ -4,7 +4,7 @@ Type Tempest is **an experimental** type-checking gem for Ruby methods, which au
 
 Say what you will about dynamic typing -- this is for those times where one does not want a million possibilities in their inputs.
 
-**Note about experimental nature:** This gem eval()s code blocks that it is given. This is dangerous! Don't use this on anything in production!
+**Note about experimental nature:** This gem eval()s code blocks that it is given. This is dangerous! Don't use this on anything you care about!
 
 ## Installation
 
