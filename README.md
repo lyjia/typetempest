@@ -41,7 +41,7 @@ Type Tempest adds two similar, top-level, and syntactically-odd methods to Ruby:
 		"Done!"
 	end
 
-Behind the scenes, TypeTempest eval()s the result of the given block and throws `TypeMismatchError` if the result's type differs from what is expected (as in, it fails `is_a?()` or `instance_of?()`). In this example, the first call to `checkme()` would pass, but the second would throw `TypeMismatchError`:
+Behind the scenes, TypeTempest eval()s the block in the context of its caller, and throws `TypeMismatchError` if the result from calling that symbol differs in type from what the type parameter dictates. (As in, it fails `is_a?()` or `instance_of?()`). In this example, the first call to `checkme()` would pass, but the second would throw `TypeMismatchError`:
 
 
     checkme("Hi", 2, "ada") # => "Done!"
